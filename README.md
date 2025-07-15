@@ -1,5 +1,73 @@
-# Machine Learning for Vehicle Insurance Fraud Detection: 
-# A High-Recall Random Forest Approach
+#  Machine Learning for Vehicle Insurance Fraud Detection  
+## A High-Recall Random Forest Approach
 
-Vehicle insurance fraud is a multi-billion dollar problem, costing the U.S. industry over $40 billion annually and forcing policyholders to pay hundreds more each year in inflated premiums. As fraud schemes become more sophisticated, outdated detection methods fail to keep up—making it harder for insurers to spot suspicious claims before payouts are made. This study aims to build a machine learning model capable of proactively identifying fraudulent claims and uncovering the features most predictive of fraud. Using a dataset of 15,420 claims—with only 6% labeled as fraudulent—a range of classification models were applied, including logistic regression, decision trees, random forest, and XGBoost. The data underwent preprocessing and feature engineering, and class imbalance was addressed through stratified sampling, SMOTE, and class weighting. Evaluation focused on recall, given the high cost of missed fraud. The final Random Forest model achieved a recall of 0.97 and an AUC of 0.81, outperforming other models in fraud detection while maintaining interpretability. SHAP analysis and feature importance rankings consistently identified key fraud signals such as fault attribution, policy type, vehicle price, deductible amount, age, and recent address changes. These findings suggest that a well-calibrated ensemble model, grounded in domain-relevant features, can improve fraud screening. By flagging high-risk claims early, insurers can better allocate investigative resources, reduce false payouts, and protect policyholders. This research contributes to the growing call for transparent, high-recall fraud detection systems—and lays a foundation for future work integrating external data sources, real-time deployment, and collaborative modeling across insurers.
+---
 
+###  **Project Overview**
+
+Vehicle insurance fraud is a **multi-billion dollar issue**, costing the U.S. industry over **$40 billion annually** and driving up premiums for honest policyholders. As fraud schemes become more complex, traditional detection methods are falling behind.
+
+This project aims to develop a **machine learning model** capable of proactively identifying fraudulent claims and uncovering the features most predictive of fraud.
+
+---
+
+###  **Data & Methods**
+
+- **Dataset**: 15,420 insurance claims  
+- **Fraud Rate**: ~6% labeled as fraudulent  
+- **Models Tested**:  
+  - Logistic Regression  
+  - Decision Trees  
+  - Random Forest  
+  - XGBoost  
+
+- **Preprocessing**:  
+  - Feature engineering  
+  - Stratified sampling  
+  - SMOTE for class imbalance  
+  - Class weighting  
+
+---
+
+###  **Model Performance**
+
+The final **Random Forest model** achieved:  
+- **Recall**: 0.97  
+- **ROC AUC**: 0.81  
+
+ It **outperformed other models** while maintaining interpretability—critical for high-stakes fraud screening.
+
+---
+
+###  **Key Insights from SHAP & Feature Importance**
+
+The model consistently highlighted the following **key fraud signals**:
+- Fault attribution  
+- Policy type  
+- Vehicle price  
+- Deductible amount  
+- Customer age  
+- Recent address change  
+
+These features proved crucial in distinguishing between fraudulent and legitimate claims.
+
+---
+
+###  **Business Impact**
+
+By flagging **high-risk claims early**, insurers can:
+- Allocate investigative resources more efficiently  
+- **Reduce false payouts**  
+- **Protect policyholders** from rising premiums  
+
+This model provides a **transparent**, high-recall fraud detection foundation with real-world utility.
+
+---
+
+###  **Future Directions**
+
+- Integration of **external data sources** (e.g., credit history, geolocation)  
+- **Real-time deployment** in claims processing pipelines  
+- Cross-insurer **collaborative modeling** to improve system-wide fraud detection  
+
+---
